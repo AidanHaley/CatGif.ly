@@ -31,8 +31,7 @@ struct GifImageView: UIViewRepresentable {
             data = try! Data(contentsOf: url)
             
         case .http:
-            //TO:DO change to load url
-            url = Bundle.main.url(forResource: path, withExtension: "gif")!
+            url = URL(string: path) ?? Bundle.main.url(forResource: "error", withExtension: "gif")!
             data = try! Data(contentsOf: url)
         }
         
@@ -42,6 +41,7 @@ struct GifImageView: UIViewRepresentable {
             characterEncodingName: "UTF-8",
             baseURL: url.deletingLastPathComponent()
         )
+        
         webView.scrollView.isScrollEnabled = false
         
         return webView
@@ -50,7 +50,6 @@ struct GifImageView: UIViewRepresentable {
     func updateUIView(_ uiView: WKWebView, context: Context) {
         uiView.reload()
     }
-    
     
 }
 
