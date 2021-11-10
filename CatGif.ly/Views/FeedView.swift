@@ -30,6 +30,7 @@ struct FeedView: View {
                 })
             
             List(viewModel.posts) { post in
+                //TO:DO - Resize webView content to remove whitespace
                 GifImageView(path: post.url, type: .http)
                     .cornerRadius(8)
                     .frame( height: CGFloat(post.height))
