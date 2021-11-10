@@ -1,9 +1,6 @@
-//
-//  CatGif_lyApp.swift
-//  CatGif.ly
-//
-//  Created by Aidan Haley on 10/11/2021.
-//
+/*
+ * 2021 Aidan Haley
+ */
 
 import SwiftUI
 
@@ -11,7 +8,7 @@ import SwiftUI
 struct CatGif_lyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FeedView()
         }
     }
 }

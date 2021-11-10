@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8CE3E14C273B6B70006ED005 /* CatGif_lyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E14B273B6B70006ED005 /* CatGif_lyApp.swift */; };
-		8CE3E14E273B6B70006ED005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E14D273B6B70006ED005 /* ContentView.swift */; };
 		8CE3E150273B6B71006ED005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE3E14F273B6B71006ED005 /* Assets.xcassets */; };
 		8CE3E153273B6B71006ED005 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE3E152273B6B71006ED005 /* Preview Assets.xcassets */; };
 		8CE3E15D273B6B71006ED005 /* CatGif_lyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E15C273B6B71006ED005 /* CatGif_lyTests.swift */; };
-		8CE3E167273B6B71006ED005 /* CatGif_lyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E166273B6B71006ED005 /* CatGif_lyUITests.swift */; };
-		8CE3E169273B6B71006ED005 /* CatGif_lyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E168273B6B71006ED005 /* CatGif_lyUITestsLaunchTests.swift */; };
+		8CE3E17B273B6BB5006ED005 /* splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8CE3E179273B6BB5006ED005 /* splash.gif */; };
+		8CE3E17C273B6BB5006ED005 /* error.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8CE3E17A273B6BB5006ED005 /* error.gif */; };
+		8CE3E180273B6C0A006ED005 /* SplashOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E17E273B6C0A006ED005 /* SplashOverlay.swift */; };
+		8CE3E181273B6C0A006ED005 /* SplashOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E17E273B6C0A006ED005 /* SplashOverlay.swift */; };
+		8CE3E182273B6C0A006ED005 /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E17F273B6C0A006ED005 /* GifImageView.swift */; };
+		8CE3E183273B6C0A006ED005 /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E17F273B6C0A006ED005 /* GifImageView.swift */; };
+		8CE3E185273B6C2E006ED005 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E184273B6C2E006ED005 /* FeedView.swift */; };
+		8CE3E186273B6C2E006ED005 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E184273B6C2E006ED005 /* FeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +41,17 @@
 /* Begin PBXFileReference section */
 		8CE3E148273B6B70006ED005 /* CatGif.ly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatGif.ly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE3E14B273B6B70006ED005 /* CatGif_lyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGif_lyApp.swift; sourceTree = "<group>"; };
-		8CE3E14D273B6B70006ED005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8CE3E14F273B6B71006ED005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE3E152273B6B71006ED005 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CE3E158273B6B71006ED005 /* CatGif.lyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatGif.lyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE3E15C273B6B71006ED005 /* CatGif_lyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGif_lyTests.swift; sourceTree = "<group>"; };
 		8CE3E162273B6B71006ED005 /* CatGif.lyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatGif.lyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CE3E166273B6B71006ED005 /* CatGif_lyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGif_lyUITests.swift; sourceTree = "<group>"; };
-		8CE3E168273B6B71006ED005 /* CatGif_lyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGif_lyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CE3E179273B6BB5006ED005 /* splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash.gif; sourceTree = "<group>"; };
+		8CE3E17A273B6BB5006ED005 /* error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = error.gif; sourceTree = "<group>"; };
+		8CE3E17D273B6BDE006ED005 /* CatGif-ly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CatGif-ly-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8CE3E17E273B6C0A006ED005 /* SplashOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashOverlay.swift; sourceTree = "<group>"; };
+		8CE3E17F273B6C0A006ED005 /* GifImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifImageView.swift; sourceTree = "<group>"; };
+		8CE3E184273B6C2E006ED005 /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +84,6 @@
 			children = (
 				8CE3E14A273B6B70006ED005 /* CatGif.ly */,
 				8CE3E15B273B6B71006ED005 /* CatGif.lyTests */,
-				8CE3E165273B6B71006ED005 /* CatGif.lyUITests */,
 				8CE3E149273B6B70006ED005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,9 +101,15 @@
 		8CE3E14A273B6B70006ED005 /* CatGif.ly */ = {
 			isa = PBXGroup;
 			children = (
+				8CE3E17D273B6BDE006ED005 /* CatGif-ly-Info.plist */,
+				8CE3E175273B6B7B006ED005 /* Services */,
+				8CE3E176273B6B87006ED005 /* Components */,
+				8CE3E177273B6B99006ED005 /* Views */,
+				8CE3E178273B6BA7006ED005 /* Models */,
 				8CE3E14B273B6B70006ED005 /* CatGif_lyApp.swift */,
-				8CE3E14D273B6B70006ED005 /* ContentView.swift */,
 				8CE3E14F273B6B71006ED005 /* Assets.xcassets */,
+				8CE3E179273B6BB5006ED005 /* splash.gif */,
+				8CE3E17A273B6BB5006ED005 /* error.gif */,
 				8CE3E151273B6B71006ED005 /* Preview Content */,
 			);
 			path = CatGif.ly;
@@ -118,13 +131,35 @@
 			path = CatGif.lyTests;
 			sourceTree = "<group>";
 		};
-		8CE3E165273B6B71006ED005 /* CatGif.lyUITests */ = {
+		8CE3E175273B6B7B006ED005 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8CE3E166273B6B71006ED005 /* CatGif_lyUITests.swift */,
-				8CE3E168273B6B71006ED005 /* CatGif_lyUITestsLaunchTests.swift */,
 			);
-			path = CatGif.lyUITests;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8CE3E176273B6B87006ED005 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8CE3E17F273B6C0A006ED005 /* GifImageView.swift */,
+				8CE3E17E273B6C0A006ED005 /* SplashOverlay.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8CE3E177273B6B99006ED005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CE3E184273B6C2E006ED005 /* FeedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CE3E178273B6BA7006ED005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +266,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE3E17B273B6BB5006ED005 /* splash.gif in Resources */,
 				8CE3E153273B6B71006ED005 /* Preview Assets.xcassets in Resources */,
 				8CE3E150273B6B71006ED005 /* Assets.xcassets in Resources */,
+				8CE3E17C273B6BB5006ED005 /* error.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE3E14E273B6B70006ED005 /* ContentView.swift in Sources */,
+				8CE3E185273B6C2E006ED005 /* FeedView.swift in Sources */,
+				8CE3E182273B6C0A006ED005 /* GifImageView.swift in Sources */,
 				8CE3E14C273B6B70006ED005 /* CatGif_lyApp.swift in Sources */,
+				8CE3E180273B6C0A006ED005 /* SplashOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE3E186273B6C2E006ED005 /* FeedView.swift in Sources */,
+				8CE3E183273B6C0A006ED005 /* GifImageView.swift in Sources */,
 				8CE3E15D273B6B71006ED005 /* CatGif_lyTests.swift in Sources */,
+				8CE3E181273B6C0A006ED005 /* SplashOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE3E167273B6B71006ED005 /* CatGif_lyUITests.swift in Sources */,
-				8CE3E169273B6B71006ED005 /* CatGif_lyUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,9 +462,9 @@
 				DEVELOPMENT_TEAM = MM37J538HJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CatGif-ly-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -451,9 +491,9 @@
 				DEVELOPMENT_TEAM = MM37J538HJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CatGif-ly-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
