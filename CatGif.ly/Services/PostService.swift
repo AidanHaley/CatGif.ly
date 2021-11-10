@@ -4,9 +4,22 @@
 
 import Foundation
 
-struct Post: Identifiable {
-    let id: Int
-    let text: String
+struct Environment {
+    let apiURL = "https://api.thecatapi.com/v1/images/search"
+    let apiKey = "0309707b-5cb9-4845-9ad5-b9215649d27a"
+    
+    //Add other filtering requirements here
+    let parameters = [
+        "order": "Random",
+        "mime_types": "gif",
+        "limit": "50"
+    ]
+}
+
+struct Post: Codable, Identifiable {
+    let id: String
+    let url: String
+    let height: Double
 }
 
 protocol Service {
@@ -14,13 +27,28 @@ protocol Service {
 }
 
 class PostService: Service {
+
     func getPosts(completion: @escaping([Post]) -> Void) {
-        DispatchQueue.main.async {
-            completion([
-                Post(id: 1, text: "Post 1"),
-                Post(id: 2, text: "Post 2"),
-                Post(id: 3, text: "Post 3")
-            ])
-        }
+        //Construct URL
+        var urlComponents = URLComponents(string: Environment().apiURL)!
+        urlComponents.queryItems = Environment().parameters.map({ (key, value) -> URLQueryItem in
+            URLQueryItem(name: key, value: String(value))
+        })
+        
+        //Create Request
+        var request = URLRequest(url: urlComponents.url!)
+        request.setValue("x-api-key", forHTTPHeaderField: Environment().apiKey)
+                        
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let data = data {
+                do {
+                    completion(try JSONDecoder().decode([Post].self, from: data))
+                } catch {
+                    print("Error parsing data: \(error)")
+                }
+            
+            }
+            
+        }.resume()
     }
 }

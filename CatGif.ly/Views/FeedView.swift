@@ -30,7 +30,9 @@ struct FeedView: View {
                 })
             
             List(viewModel.posts) { post in
-                Text(post.text)
+                GifImageView(path: post.url, type: .http)
+                    .cornerRadius(8)
+                    .frame( height: CGFloat(post.height))
             }
             .opacity(showFeed ? 1 : 0)
             .onAppear(perform: viewModel.getPosts)
