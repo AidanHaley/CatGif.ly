@@ -17,6 +17,11 @@ struct FeedView: View {
     
     var body: some View {
         ZStack {
+            
+            Color("Primary").ignoresSafeArea()
+            
+            //MARK: - Splash
+            
             SplashOverlay()
                 .opacity(showSplash ? 1 : 0)
                 .onAppear(perform: {
@@ -29,14 +34,26 @@ struct FeedView: View {
                     })
                 })
             
-            List(viewModel.posts) { post in
-                //TO:DO - Resize webView content to remove whitespace
-                GifImageView(path: post.url, type: .http)
-                    .cornerRadius(8)
-                    .frame( height: CGFloat(post.height))
+            //MARK: - Feed
+            
+            VStack {
+                Text("CatGif.ly")
+                
+                ScrollView {
+                    VStack(alignment: .center, spacing: 20) {
+                        ForEach(viewModel.posts) { post in
+                            //TO:DO - Resize webView content to remove whitespace
+                            GifImageView(path: post.url, type: .http)
+                                .cornerRadius(8)
+                                .frame( height: CGFloat(post.height))
+                        }
+                    }
+                    .padding(.horizontal)
+                }
             }
             .opacity(showFeed ? 1 : 0)
             .onAppear(perform: viewModel.getPosts)
+            
         }
     }
 }

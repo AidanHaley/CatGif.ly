@@ -13,10 +13,10 @@ struct Environment {
     let parameters = [
         "order": "Random",
         "mime_types": "gif",
-        "limit": "50"
+        "limit": "15"
     ]
     
-    //Add othe filters here
+    //Add other filters here
     let filters = [
         "hats"
     ]
