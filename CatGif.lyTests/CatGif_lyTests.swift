@@ -1,33 +1,30 @@
-//
-//  CatGif_lyTests.swift
-//  CatGif.lyTests
-//
-//  Created by Aidan Haley on 10/11/2021.
-//
+/*
+ * 2021 Aidan Haley
+ */
 
 import XCTest
 @testable import CatGif_ly
 
 class CatGif_lyTests: XCTestCase {
+    
+    var sut: FeedView.FeedViewModel!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = FeedView.FeedViewModel.init(service: MockAPIService())
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    //MARK: - Tests
+    
+    func test_getPosts() {
+        XCTAssertTrue(sut.posts.isEmpty)
+        
+        sut.getPosts()
+        
+        XCTAssertEqual(sut.posts.count, 3)
     }
 
 }

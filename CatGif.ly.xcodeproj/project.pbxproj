@@ -23,6 +23,8 @@
 		8CE3E189273B6E43006ED005 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E187273B6E43006ED005 /* FeedViewModel.swift */; };
 		8CE3E18B273B6FC4006ED005 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E18A273B6FC4006ED005 /* PostService.swift */; };
 		8CE3E18C273B6FC4006ED005 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E18A273B6FC4006ED005 /* PostService.swift */; };
+		8CE3E18E273CB75E006ED005 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E18D273CB75E006ED005 /* MockAPIService.swift */; };
+		8CE3E18F273CB764006ED005 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3E18D273CB75E006ED005 /* MockAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		8CE3E184273B6C2E006ED005 /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		8CE3E187273B6E43006ED005 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		8CE3E18A273B6FC4006ED005 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		8CE3E18D273CB75E006ED005 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8CE3E18A273B6FC4006ED005 /* PostService.swift */,
+				8CE3E18D273CB75E006ED005 /* MockAPIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -259,6 +263,7 @@
 				8CE3E188273B6E43006ED005 /* FeedViewModel.swift in Sources */,
 				8CE3E18B273B6FC4006ED005 /* PostService.swift in Sources */,
 				8CE3E185273B6C2E006ED005 /* FeedView.swift in Sources */,
+				8CE3E18F273CB764006ED005 /* MockAPIService.swift in Sources */,
 				8CE3E182273B6C0A006ED005 /* GifImageView.swift in Sources */,
 				8CE3E14C273B6B70006ED005 /* CatGif_lyApp.swift in Sources */,
 				8CE3E180273B6C0A006ED005 /* SplashOverlay.swift in Sources */,
@@ -272,6 +277,7 @@
 				8CE3E189273B6E43006ED005 /* FeedViewModel.swift in Sources */,
 				8CE3E18C273B6FC4006ED005 /* PostService.swift in Sources */,
 				8CE3E186273B6C2E006ED005 /* FeedView.swift in Sources */,
+				8CE3E18E273CB75E006ED005 /* MockAPIService.swift in Sources */,
 				8CE3E183273B6C0A006ED005 /* GifImageView.swift in Sources */,
 				8CE3E15D273B6B71006ED005 /* CatGif_lyTests.swift in Sources */,
 				8CE3E181273B6C0A006ED005 /* SplashOverlay.swift in Sources */,
@@ -410,7 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CatGif.ly/Preview Content\"";
@@ -440,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CatGif.ly/Preview Content\"";
