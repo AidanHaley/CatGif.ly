@@ -12,7 +12,12 @@ The app is fairly straightforward, just look at the gifs and enjoy!
 # Navigating the Code
 The app is architected using MVVM and SwiftUI, all Components, Views, View Models and Services can be found in their respective folders.
 
-Questions and Feedback
+# TO:DO
+- Add more Unit Tests
+- Fix whitespace around some gifs and adjust GifImageView to fit content correctly
+- Pagination to improve performance and display more content
+
+# Questions and Feedback
 All questions and feedback are welcome!
 
 Please don't hesitate to contact me at: Aidan.h95@outlook.com
